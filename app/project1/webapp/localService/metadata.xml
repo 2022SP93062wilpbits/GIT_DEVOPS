@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:DataServices>
+        <Schema Namespace="Quotationservice" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="Quotation" EntityType="Quotationservice.Quotation"/>
+            </EntityContainer>
+            <EntityType Name="Quotation">
+                <Key>
+                    <PropertyRef Name="documentNumber"/>
+                </Key>
+                <Property Name="documentNumber" Type="Edm.Int32" Nullable="false"/>
+                <Property Name="itemNumber" Type="Edm.Int32"/>
+                <Property Name="soldToPartyID" Type="Edm.Int32"/>
+                <Property Name="soldToPartyName" Type="Edm.String"/>
+                <Property Name="date" Type="Edm.Date"/>
+                <Property Name="amount" Type="Edm.Decimal" Scale="3" Precision="9"/>
+                <Property Name="currency" Type="Edm.String"/>
+                <Property Name="statusCode" Type="Edm.String"/>
+                <Property Name="statusName" Type="Edm.String"/>
+                <Property Name="organizationID" Type="Edm.Int32"/>
+                <Property Name="organizationName" Type="Edm.String"/>
+                <Property Name="divisionID" Type="Edm.Int32"/>
+                <Property Name="divisionName" Type="Edm.String"/>
+                <Property Name="channelID" Type="Edm.Int32"/>
+                <Property Name="channelName" Type="Edm.String"/>
+                <Property Name="typeCode" Type="Edm.Int32"/>
+                <Property Name="typeName" Type="Edm.String"/>
+                <Property Name="documentTypeCode" Type="Edm.Int32"/>
+                <Property Name="deliveryDate" Type="Edm.Date"/>
+                <Property Name="customerReferenceDate" Type="Edm.Date"/>
+                <Property Name="customerReference" Type="Edm.String"/>
+                <Property Name="quotationStartDate" Type="Edm.Date"/>
+                <Property Name="quotationEndDate" Type="Edm.Date"/>
+                <Property Name="orderReason" Type="Edm.String"/>
+                <Property Name="rejectionReason" Type="Edm.String"/>
+                <Property Name="sourceSystemID" Type="Edm.String"/>
+                <Property Name="additionalText" Type="Edm.String"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

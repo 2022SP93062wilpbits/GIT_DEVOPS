@@ -1,0 +1,8 @@
+---
+applications:
+- name: capapp
+  path: srv/target/capapp-exec.jar
+  random-route: true
+  services:
+  - quot-db
+
